@@ -46,3 +46,7 @@ with open("model.bin", 'wb') as f_out:
 with open("vectorizer.bin", 'wb') as f_out:
     pickle.dump(tfidfvectorizer, f_out) # write vector in .bin file
     f_out.close()  # close the file 
+
+with open("train_vector.bin", 'wb') as f_out:
+    pickle.dump(tfidf_train, f_out) # write vector in .bin file
+    f_out.close()  # close the file 
